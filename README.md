@@ -6,5 +6,5 @@ This repository is the usage page of the PolyU_trafficMonitoringDAS dataset. Bas
 Key words: **Distributed Acoustic Sensing**, **Traffic Monitoring**, **Busy Traffic Environmnet**
 
 <p align="center">
-  <img width="712pix" src="images/The Cross-Harbour Tunnel.tif">
+  <img width="712pix" src="images/The Cross-Harbour Tunnel.png">
 </p>
