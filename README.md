@@ -13,8 +13,8 @@ Key words: **Distributed Acoustic Sensing**, **Traffic Monitoring**, **Busy Traf
 </p>
 
 **Important Notes**: 
-  - **About access to DAS mat file**: The traffic monitoring data collected by DAS is provided as mat files and each file contains 5 minutes data. And the matlab file provides the code for reading data into the workspace.
-  - **About access to vedio reference file**: The ground truth of vehicles is recorded in a video.
+  - **About access to DAS mat file of PolyU dataset**: The traffic monitoring data collected by DAS is provided as mat files and each file contains 5 minutes data. And the matlab file provides the code for reading data into the workspace.
+  - **About access to vedio reference file PolyU dataset**: The ground truth of vehicles is recorded in a video.
   - **Algorithm validation and contribution**: Researches are welcomed to share their traffic sensor dataset by DAS, traffic monitoring source code to the TrafficMonitoringDAS dataset after a review process, e,g, code for vehicle detection or tracking, etc.
 
 ## Overview
