@@ -48,7 +48,7 @@ The shared sensor data is collected from a road which is a 1.86-kilometer two-wa
 
 ### Signal enhancement for weak vehicle signals
 
-In urban traffic scenarios, there are various types of vehicles. Vehicles with greater mass generate vibration signals of larger amplitude, which can easily mask the signals of smaller vehicles. As shown in **Fig. 3 (a)**, the distinct vehicle trajectories collected are caused by the double-decker buses, while the signals of the middle small vehicles are masked. To clear the weak vehicle signals, we proposed the **block normalization algorithm**. The $M \times N$ input image is partitioned into non-overlapping rectangular blocks of size $k \times l$, indexed by $i =  M/k $ along the rows and $j =  N/l $ along the columns. Each block is normalized independently as:
+In urban traffic scenarios, there are various types of vehicles. Vehicles with greater mass generate vibration signals of larger amplitude, which can easily mask the signals of smaller vehicles. As shown in **Fig. 3 (a)**, the distinct vehicle trajectories collected are caused by the double-decker buses, while the signals of the middle small vehicles are masked. To clear the weak vehicle signals, we proposed the **block normalization algorithm**.The $M \times N$ input image is partitioned into non-overlapping rectangular blocks of size $k \times l$, indexed by $i =  M/k $ along the rows and $j =  N/l $ along the columns. Each block is normalized independently as:
 
 $$
 B_{i,j}^{"}(m,n) = \frac{B_{i,j}^{'}(m,n) - \min(B_{i,j}^{'})}{\max(B_{i,j}^{'}) - \min(B_{i,j}^{'}) + \epsilon}
