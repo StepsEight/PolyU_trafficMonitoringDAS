@@ -15,7 +15,7 @@ Key words: **Distributed Acoustic Sensing**, **Traffic Monitoring**, **Busy Traf
 **Important Notes**: 
   - **About access to DAS mat file of PolyU dataset**: The traffic monitoring data collected by DAS is provided as mat files and each file contains 5 minutes data. And the matlab file provides the code for reading data into the workspace.
   - **About access to video reference file of PolyU dataset**: The ground truth of vehicles is recorded in a video.
-  - **About access to Quick Start of PolyU dataset**: Some basic codes (dataset reading, preprocessing, block normalization algorithm) are provided in Quick Start folder
+  - **About access to Quick Start of PolyU dataset**: Some basic codes (dataset reading, preprocessing, block normalization algorithm) are provided in Quick Start folder.
   - **Algorithm validation and contribution**: Researches are welcomed to share their traffic sensor dataset by DAS, traffic monitoring source code to the TrafficMonitoringDAS dataset after a review process, e,g, code for vehicle detection or tracking, etc.
 
 ## Overview
@@ -37,7 +37,7 @@ Key words: **Distributed Acoustic Sensing**, **Traffic Monitoring**, **Busy Traf
 
 ## 🌟 The traffic dataset in Hong Kong from PolyU
 ### Experimental setup
-The shared sensor data is collected from a road which is a 1.86-kilometer two-way two-lane road. The optical fiber cable contains over 100 co-routed fibers (some with live communication traffic) and as shown in Fig. 1, the cable is deployed in the trench on one side of the road. Therefore, the collected DAS data mainly captures the vibrations induced by vehicles coming from one direction, but in the low-frequency range, the signals from the opposite direction can also be detected. In this experiment, we used a typical single-frequency optical pulses DAS with a gauge length of 3.75m and sampling interval of 1.25m to collect 15-minute strain rate data with 2kHz temporal sampling rate. The speeds of the collected vehicles are generally within the range of 50 to 60 kilometers per hour. The sensor data from are saved as mat files. To ensure the integrity of the downloaded files, each file records traffic vibration signals for 5 minutes. The high-resolution sensing performance ensures the separability of vehicle trajectories in this high-traffic scenario, making it suitable for verifying the performance of vehicle detection and tracking algorithms. In addition, a camera was set on a nearby overpass bridge, and the corresponding video footage is also available for the matching/verifications between vehicles and DAS vibration traces, which will be a good benchmark to characterize the performance of various algorithms for vehicle detection, tracking, classifications and speed estimation etc.
+The shared sensor data is collected from a road which is a 1.86-kilometer two-way two-lane road. The optical fiber cable contains over 100 co-routed fibers (some with live communication traffic) and as shown in **Fig. 1**, the cable is deployed in the trench on one side of the road. Therefore, the collected DAS data mainly captures the vibrations induced by vehicles coming from one direction, but in the low-frequency range, the signals from the opposite direction can also be detected. In this experiment, we used a typical single-frequency optical pulses DAS with a gauge length of 3.75m and sampling interval of 1.25m to collect 15-minute strain rate data with 2kHz temporal sampling rate. The speeds of the collected vehicles are generally within the range of 50 to 60 kilometers per hour. The sensor data from are saved as mat files. To ensure the integrity of the downloaded files, each file records traffic vibration signals for 5 minutes. The high-resolution sensing performance ensures the separability of vehicle trajectories in this high-traffic scenario, making it suitable for verifying the performance of vehicle detection and tracking algorithms. In addition, a camera was set on a nearby overpass bridge, and the corresponding video footage is also available for the matching/verifications between vehicles and DAS vibration traces, which will be a good benchmark to characterize the performance of various algorithms for vehicle detection, tracking, classifications and speed estimation etc.
 
 <p align="center">
   <img width="712pix" src="images/DAS traffic monitoring.png">
@@ -56,7 +56,7 @@ $$
 
 where $B_{i,j}^{’}$ is the absolute value expression of each block $B_{i,j}$, $m \in [0,k-1]$ and $n \in [0,l-1]$ denote the local coordinates within the block, $\epsilon$ is a small constant for preventing division by zero.
 
-Given that vehicle strain rate signals persist for approximately 2 seconds, the block size is reduced to [1.5s 12m] and the original signal is block-normalized as shown in Fig. 3 (b), thereby avoiding the coverage of high-amplitude signals and enables the visibility of weak vehicle trajectories.
+Given that vehicle strain rate signals persist for approximately 2 seconds, the block size is reduced to [1.5s 12m] and the original signal is block-normalized as shown in **Fig. 3 (b)**, thereby avoiding the coverage of high-amplitude signals and enables the visibility of weak vehicle trajectories.
 
 <p align="center">
   <img width="712pix" src="images/The result of the block-normalized algorithm.png">
