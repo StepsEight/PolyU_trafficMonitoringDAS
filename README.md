@@ -71,7 +71,7 @@ In order to build your algorithm more quickly on this dataset, we have provided 
 ## 🙌 Acknowledgements
 We acknowledge the help from **Jingming Zhang** and **Jipeng Liu**.
 If you use the open-source dataset from PolyU in your research, please cite the following paper:
-
+<br>
 > **Y. Li, J. Zhang, Y. Yan and A. P. T. Lau, “Traffic Monitoring using Optical Fiber Distributed Acoustic Sensing for Metropolitan Environments”, Journal of Lightwave Technology, pp. 1–17, 2025, doi: 10.1109/jlt.2025.3642924.**
 
 ## ©️ Copyright
