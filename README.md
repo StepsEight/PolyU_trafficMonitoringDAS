@@ -18,13 +18,13 @@ Key words: **Distributed Acoustic Sensing**, **Traffic Monitoring**, **Busy Traf
   - **About access to Quick Start of PolyU dataset**: Some basic codes (dataset reading, preprocessing, block normalization algorithm) are provided in Quick Start folder.
   - **Algorithm validation and contribution**: Researches are welcomed to share their traffic sensor dataset by DAS, traffic monitoring source code to the TrafficMonitoringDAS dataset after a review process, e,g, code for vehicle detection or tracking, etc.
 
-## Overview
+## 🛠️ Overview
 - [Objective](#objective-of-the-dataset)
 - [The traffic dataset in Hong Kong from PolyU](#the-dataset-of-the-cross-harbour-tunnel-from-polyu)
 - [Acknowledgements](#acknowledgements)
-- [License](#license)
+- [Copyright](#copyright)
 
-## Objective of the Dataset
+## 📑 Objective of the Dataset
 - Open-sourcing traffic sensor data in busy traffic environment, including the traffic dataset in Hong Kong;
 
 - Raising the awareness of the traffic monitoring using DAS in busy traffic environment, especially in metropolitan environment;
@@ -68,8 +68,8 @@ Given that vehicle strain rate signals persist for approximately 2 seconds, the 
 ### Quick Start
 In order to build your algorithm more quickly on this dataset, we have provided some basic code (dataset reading, preprocessing, block normalization algorithm) in Quick Start folder to help you get started quickly.
 
-## Acknowledgements
+## 🙌 Acknowledgements
 We acknowledge the help from Jingming Zhang and Jipeng Liu.
 
-## License
+## ©️ Copyright
 This open-source dataset is owned and managed by **the Photonics Research Institute of The Hong Kong Polytechnic University**. These data are exclusively for academic research and non-commercial use. For any commercial or technical issues, please contact Yinghuan Li via email ying-huan.li@connect.polyu.hk
