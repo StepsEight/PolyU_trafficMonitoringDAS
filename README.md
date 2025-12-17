@@ -35,7 +35,7 @@ Key words: **Distributed Acoustic Sensing**, **Traffic Monitoring**, **Busy Traf
 
 **Contact Authors (corresponding to issues and maintenance of the currently available the Hong Kong dataset)**: [Yinghuan Li]([ying-huan.li@connect.polyu.hk]),  The Hong Kong Polytechnique University
 
-## The traffic dataset in Hong Kong from PolyU
+## 🌟 The traffic dataset in Hong Kong from PolyU
 ### Experimental setup
 The shared sensor data is collected from a road which is a 1.86-kilometer two-way two-lane road. The optical fiber cable contains over 100 co-routed fibers (some with live communication traffic) and as shown in Fig. 1, the cable is deployed in the trench on one side of the road. Therefore, the collected DAS data mainly captures the vibrations induced by vehicles coming from one direction, but in the low-frequency range, the signals from the opposite direction can also be detected. In this experiment, we used a typical single-frequency optical pulses DAS with a gauge length of 3.75m and sampling interval of 1.25m to collect 15-minute strain rate data with 2kHz temporal sampling rate. The speeds of the collected vehicles are generally within the range of 50 to 60 kilometers per hour. The sensor data from are saved as mat files. To ensure the integrity of the downloaded files, each file records traffic vibration signals for 5 minutes. The high-resolution sensing performance ensures the separability of vehicle trajectories in this high-traffic scenario, making it suitable for verifying the performance of vehicle detection and tracking algorithms. In addition, a camera was set on a nearby overpass bridge, and the corresponding video footage is also available for the matching/verifications between vehicles and DAS vibration traces, which will be a good benchmark to characterize the performance of various algorithms for vehicle detection, tracking, classifications and speed estimation etc.
 
@@ -46,7 +46,7 @@ The shared sensor data is collected from a road which is a 1.86-kilometer two-wa
   </figcaption>
 </p>
 
-### Signal enhancement for weak vehicle signals
+### Example Use Case - Signal enhancement for weak vehicle signals
 
 In urban traffic scenarios, there are various types of vehicles. Vehicles with greater mass generate vibration signals of larger amplitude, which can easily mask the signals of smaller vehicles. As shown in **Fig. 3 (a)**, the distinct vehicle trajectories collected are caused by the double-decker buses, while the signals of the middle small vehicles are masked. To clear the weak vehicle signals, we proposed the **block normalization algorithm**.The $M \times N$ input image is partitioned into non-overlapping rectangular blocks of size $k \times l$,indexed by $i = \lfloor M/k \rfloor$ along the rows and $j = \lfloor N/l \rfloor$ along the columns. Each block is normalized independently as:
 
@@ -72,4 +72,4 @@ In order to build your algorithm more quickly on this dataset, we have provided 
 We acknowledge the help from Jingming Zhang and Jipeng Liu.
 
 ## License
-For any technical issues, please contact Yinghuan Li via email ying-huan.li@connect.polyu.hk
+This open-source dataset is owned and managed by **the Photonics Research Institute of The Hong Kong Polytechnic University**. These data are exclusively for academic research and non-commercial use. For any commercial or technical issues, please contact Yinghuan Li via email ying-huan.li@connect.polyu.hk
